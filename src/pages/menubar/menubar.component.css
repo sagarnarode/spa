@@ -1,0 +1,84 @@
+nav {
+  position: fixed; /* Fixed position at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque for better visibility */
+  backdrop-filter: blur(10px); /* Blur effect for the background */
+  padding: 20px 40px; /* Increased padding for a bigger look */
+  z-index: 1000; /* Ensure it stays on top */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Menu Icon Styles */
+.menu-icon {
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 32px; /* Increased size of the hamburger icon */
+  color: #333; /* Color for the icon */
+  position: absolute; /* Position icon on the left */
+  left: 20px; /* Space from the left */
+}
+
+/* Hide the menu by default */
+ul {
+  display: flex; /* Use flexbox for horizontal layout */
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Menu Item Styles */
+nav ul li {
+  margin: 0 25px; /* Increased space between menu items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Color for the links */
+  font-size: 20px; /* Increased font size for menu items */
+  padding: 10px 15px; /* Padding around menu items */
+  transition: color 0.3s, background-color 0.3s; /* Transition for hover effect */
+}
+
+nav ul li a:hover {
+  color: #fff; /* Change color on hover */
+  background-color: #ffa500; /* Background color on hover */
+  border-radius: 5px; /* Slight rounding on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+      padding: 10px; /* Adjust padding on mobile */
+  }
+
+  .menu-icon {
+      display: block; /* Show the menu icon on mobile */
+  }
+
+  ul {
+      display: none; /* Hide menu items by default on mobile */
+      flex-direction: column; /* Vertical layout */
+      position: absolute; /* Position absolute for dropdown */
+      top: 60px; /* Position below the menu icon */
+      left: 0; /* Align to the left */
+      background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
+      width: 100%; /* Full width */
+      align-items: center; /* Center items in vertical layout */
+  }
+
+  ul.active {
+      display: flex; /* Show menu when active */
+  }
+
+  nav ul li {
+      margin: 15px 0; /* Space between items in vertical layout */
+  }
+
+  nav ul li a {
+      font-size: 24px; /* Larger font size for mobile */
+      padding: 15px; /* Increased padding for mobile items */
+  }
+}

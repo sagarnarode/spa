@@ -1,0 +1,104 @@
+.contact-info {
+    margin-bottom: 30px; /* Space below the contact info */
+    padding: 20px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+.about-image-section {
+    width: 100%; /* Full width */
+}
+
+.about-image {
+    width: 100%; /* Full width for image */
+    height: 700px; /* Maintain original height */
+   
+}
+.location-row {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Space out the elements */
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 15px; /* Space below the location row */
+}
+
+.location-details {
+    flex: 1; /* Allow this section to take available space */
+    margin-right: 20px; /* Space between location details and map */
+    margin-top: 50px;
+    text-align: center; /* Center the text */
+}
+
+.location-details p {
+    margin: 5px 0; /* Space between paragraphs */
+    font-size: 1.1em; /* Font size */
+    color: #666; /* Text color */
+}
+
+.map-container {
+    flex: 1; /* Allow map to take equal space */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.map-container h3 {
+    text-align: center; /* Center the map title */
+    color: #007bff; /* Highlight color */
+}
+
+
+.query-form {
+    margin-top: 30px; /* Space above the form */
+    text-align: left; /* Align form text to the left */
+    max-width: 600px; /* Max width for form */
+    margin: 0 auto; /* Center the form */
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.query-form h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #007bff; /* Highlight color */
+}
+
+.query-form label {
+    display: block; /* Each label on a new line */
+    margin-bottom: 5px; /* Space below each label */
+    font-weight: bold; /* Bold labels */
+    color: #333;
+}
+
+.query-form input,
+.query-form textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+.query-form input:focus,
+.query-form textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.send-button {
+    padding: 10px 20px; /* Padding for button */
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1.1em; /* Font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.send-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
